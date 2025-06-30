@@ -1,0 +1,195 @@
+# 🏕️ WanderLust: Your Adventure Awaits! 🌍
+
+![WanderLust Banner](https://via.placeholder.com/1200x300.png?text=WanderLust+Adventure)  
+*Explore unique stays, share your home, and leave reviews with WanderLust!*
+
+⚠️ **Disclaimer**: WanderLust is a demo project and **not an official website**. It is designed for educational purposes to demonstrate how features like user authentication, listing management, reviews, and maps work. The content posted on this application (e.g., listings, images, or descriptions like "cxcxcccvvdfdf") may be random or nonsensical, as users can post freely for testing. Please do not trust or rely on the content as real-world information. Verify any information independently before use. Visit the project at [https://sigma-3-0-project.onrender.com](https://sigma-3-0-project.onrender.com). ⚠️
+
+---
+
+## 📖 Project Overview
+
+WanderLust is a full-stack web application inspired by Airbnb, built to showcase creating, managing, and reviewing rental listings. With user authentication, image uploads, geocoded maps, and a star rating system, it’s a hands-on example of modern web development! 🚀
+
+- **Tech Stack**: Node.js, Express, MongoDB, EJS, Bootstrap, Cloudinary, MapLibre, Passport, Joi
+- **Features**:
+  - 🔒 User signup, login, and logout with Passport authentication
+  - 🏠 Create, edit, and delete listings with image uploads to Cloudinary
+  - ⭐ Add and delete reviews with a 1–5 star rating system
+  - 🗺️ Interactive maps showing listing locations using MapLibre
+  - 📢 Flash messages for user feedback
+  - ✅ Form validation with Joi and Bootstrap
+  - 📱 Responsive design with custom styling
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (v16 or higher)
+- MongoDB Atlas or local MongoDB
+- Cloudinary account for image storage
+- MapTiler API key for maps
+- Environment variables (see `.env` example below)
+
+### Installation
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/wanderlust.git
+   cd wanderlust
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Set up environment variables**:
+   Create a `.env` file in the root directory:
+   ```env
+   NODE_ENV=development
+   ATLASDB_URL=your_mongodb_atlas_url
+   SECRET=your_session_secret
+   CLOUD_NAME=your_cloudinary_cloud_name
+   CLOUD_API_KEY=your_cloudinary_api_key
+   CLOUD_API_SECRET=your_cloudinary_api_secret
+   MAP_TOKEN=your_maptiler_api_key
+   Email_Id=your_email_for_nominatim
+   ```
+
+4. **Run the application**:
+   ```bash
+   npm start
+   ```
+   Open `http://localhost:3000` in your browser or visit the live demo at [https://sigma-3-0-project.onrender.com](https://sigma-3-0-project.onrender.com).
+
+---
+
+## 📂 Project Structure
+
+```plaintext
+wanderlust/
+├── controllers/       # Route handlers
+│   ├── listings.js    # Listing CRUD logic
+│   ├── reviews.js     # Review CRUD logic
+│   ├── users.js       # User authentication logic
+├── models/            # MongoDB schemas
+│   ├── listing.js     # Listing schema with GeoJSON
+│   ├── review.js      # Review schema
+│   ├── user.js        # User schema with Passport
+├── public/            # Static assets
+│   ├── css/           # CSS files
+│   │   ├── style.css  # Global styles
+│   │   ├── rating.css # Star rating styles
+│   ├── js/            # JavaScript files
+│   │   ├── script.js  # Form validation
+├── routes/            # Express routers
+│   ├── listing.js     # Listing routes
+│   ├── review.js      # Review routes
+│   ├── user.js        # User routes
+├── utils/             # Utilities
+│   ├── ExpressError.js # Custom error class
+│   ├── wrapAsync.js   # Async error handling
+├── views/             # EJS templates
+│   ├── layouts/       # Layout templates
+│   │   ├── boilerplate.ejs # Base layout
+│   ├── partials/      # Reusable components
+│   │   ├── navbar.ejs # Navigation bar
+│   │   ├── footer.ejs # Footer
+│   │   ├── flash.ejs  # Flash messages
+│   ├── edit.ejs       # Edit listing form
+│   ├── index.ejs      # List all listings
+│   ├── new.ejs        # Create listing form
+│   ├── show.ejs       # Show listing details
+│   ├── login.ejs      # Login form
+│   ├── signup.ejs     # Signup form
+│   ├── error.ejs      # Error page
+├── app.js             # Main Express app
+├── cloudConfig.js     # Cloudinary configuration
+├── middleware.js      # Custom middleware
+├── schema.js          # Joi validation schemas
+├── .env               # Environment variables
+```
+
+---
+
+## ✨ Features
+
+### 🧑‍💻 User Authentication
+- Sign up with a username, email, and password.
+- Log in/out securely with Passport’s local strategy.
+- Flash messages for success (`Welcome to WanderLust!`) or errors.
+
+### 🏡 Listings
+- Create listings with a title, description, price, location, country, and image.
+- Edit or delete listings (owner-only).
+- Geocode locations using OpenStreetMap’s Nominatim API.
+- Upload images to Cloudinary.
+- Display listings in a responsive grid with a tax toggle (+18% GST).
+
+### ⭐ Reviews
+- Add 1–5 star ratings and comments to listings (authenticated users only).
+- Delete reviews (author-only).
+- Star ratings styled with a custom CSS system.
+
+### 🗺️ Maps
+- Show listing locations on an interactive MapLibre map with a custom marker and popup.
+
+### ✅ Validation
+- Client-side form validation with Bootstrap.
+- Server-side validation with Joi (`schema.js`) for listings and reviews.
+- Error handling with custom `ExpressError` class.
+
+---
+
+## 🛠️ Key Technologies
+
+- **Node.js & Express**: Backend framework for routing and logic.
+- **MongoDB & Mongoose**: Database for storing users, listings, and reviews.
+- **EJS & ejs-mate**: Templating engine for dynamic HTML.
+- **Passport**: Authentication with local strategy.
+- **Cloudinary**: Image storage for listings.
+- **MapLibre**: Interactive maps for location display.
+- **Joi**: Schema validation for data integrity.
+- **Bootstrap**: Responsive UI with form validation.
+- **connect-flash & connect-mongo**: Flash messages and session storage.
+
+---
+
+## 📸 Screenshots
+
+*(Replace with actual screenshots)*  
+![Home Page](https://via.placeholder.com/600x300.png?text=Home+Page)  
+*Browse listings with filters and tax toggle.*
+
+![Listing Show Page](https://via.placeholder.com/600x300.png?text=Listing+Show+Page)  
+*View listing details, reviews, and a map.*
+
+---
+
+## 🤝 Contributing
+
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature/YourFeature`).
+3. Commit changes (`git commit -m 'Add YourFeature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Open a pull request.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙌 Acknowledgments
+
+- [Node.js](https://nodejs.org/) for the runtime environment.
+- [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) for cloud database hosting.
+- [Cloudinary](https://cloudinary.com/) for image management.
+- [MapTiler](https://www.maptiler.com/) for map APIs.
+- [Bootstrap](https://getbootstrap.com/) for responsive design.
+- [Font Awesome](https://fontawesome.com/) for icons.
+
+🌟 **Explore WanderLust’s features at [https://sigma-3-0-project.onrender.com](https://sigma-3-0-project.onrender.com) (but remember, it’s a demo with potential random content)!** 🌟
