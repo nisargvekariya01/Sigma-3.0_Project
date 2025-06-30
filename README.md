@@ -3,7 +3,9 @@
 ![WanderLust Banner](https://via.placeholder.com/1200x300.png?text=WanderLust+Adventure)  
 *Explore unique stays, share your home, and leave reviews with WanderLust!*
 
-⚠️ **Disclaimer**: WanderLust is a demo project and **not an official website**. It is designed for educational purposes to demonstrate how features like user authentication, listing management, reviews, and maps work. The content posted on this application (e.g., listings, images, or descriptions like "cxcxcccvvdfdf") may be random or nonsensical, as users can post freely for testing. Please do not trust or rely on the content as real-world information. Verify any information independently before use. **Visit the project at [WanderLust](https://sigma-3-0-project.onrender.com/listings).** ⚠️
+⚠️ **Disclaimer**: WanderLust is a 🚀 demo project built for learning — not a real travel site!
+🧪 Listings, images, and reviews may be random or silly (yes, even “cxcxcccvvdfdf”) — they’re just for testing!
+🔍 Don’t rely on anything here — always double-check in the real world! **Visit the project at [WanderLust](https://sigma-3-0-project.onrender.com/listings).** ⚠️
 
 ---
 
