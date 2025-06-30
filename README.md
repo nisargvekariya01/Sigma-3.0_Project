@@ -3,15 +3,15 @@
 ![WanderLust Banner](https://via.placeholder.com/1200x300.png?text=WanderLust+Adventure)  
 *Explore unique stays, share your home, and leave reviews with WanderLust!*
 
-⚠️ **Disclaimer**: WanderLust is a demo project and **not an official website**. It is designed for educational purposes to demonstrate how features like user authentication, listing management, reviews, and maps work. The content posted on this application (e.g., listings, images, or descriptions like "cxcxcccvvdfdf") may be random or nonsensical, as users can post freely for testing. Please do not trust or rely on the content as real-world information. Verify any information independently before use. Visit the project at [WanderLust](https://sigma-3-0-project.onrender.com). ⚠️
+⚠️ **Disclaimer**: WanderLust is a demo project and **not an official website**. It is designed for educational purposes to demonstrate how features like user authentication, listing management, reviews, and maps work. The content posted on this application (e.g., listings, images, or descriptions like "cxcxcccvvdfdf") may be random or nonsensical, as users can post freely for testing. Please do not trust or rely on the content as real-world information. Verify any information independently before use. Visit the project at [https://sigma-3-0-project.onrender.com](https://sigma-3-0-project.onrender.com) by copying and pasting the link into a browser like Chrome or Microsoft Edge, as it may not open directly from GitHub. ⚠️
 
 ---
 
 ## 📖 Project Overview
 
-WanderLust is a full-stack web application inspired by Airbnb, built to showcase creating, managing, and reviewing rental listings. With user authentication, image uploads, geocoded maps, and a star rating system, it’s a hands-on example of modern web development! 🚀
+WanderLust is a full-stack web application inspired by Airbnb, built to showcase creating, managing, and reviewing rental listings. Hosted on **Render** and powered by **MongoDB Atlas** for cloud database storage, it features user authentication, image uploads, geocoded maps, and a star rating system. It’s a hands-on example of modern web development! 🚀
 
-- **Tech Stack**: Node.js, Express, MongoDB, EJS, Bootstrap, Cloudinary, MapLibre, Passport, Joi
+- **Tech Stack**: Node.js, Express, MongoDB (via MongoDB Atlas), EJS, Bootstrap, Cloudinary, MapLibre, Passport, Joi, Render
 - **Features**:
   - 🔒 User signup, login, and logout with Passport authentication
   - 🏠 Create, edit, and delete listings with image uploads to Cloudinary
@@ -27,9 +27,10 @@ WanderLust is a full-stack web application inspired by Airbnb, built to showcase
 
 ### Prerequisites
 - Node.js (v16 or higher)
-- MongoDB Atlas or local MongoDB
+- MongoDB Atlas account for cloud database hosting
 - Cloudinary account for image storage
 - MapTiler API key for maps
+- Render account for deployment
 - Environment variables (see `.env` example below)
 
 ### Installation
@@ -57,11 +58,17 @@ WanderLust is a full-stack web application inspired by Airbnb, built to showcase
    Email_Id=your_email_for_nominatim
    ```
 
-4. **Run the application**:
+4. **Run the application locally**:
    ```bash
    npm start
    ```
-   Open `http://localhost:3000` in your browser or visit the live demo at [https://sigma-3-0-project.onrender.com](https://sigma-3-0-project.onrender.com).
+   Open `http://localhost:3000` in your browser.
+
+5. **Deploy to Render**:
+   - Push the repository to GitHub.
+   - Create a new web service on Render, linking to your GitHub repo.
+   - Set the environment variables in Render’s dashboard (same as `.env`).
+   - Deploy and access the app at [https://sigma-3-0-project.onrender.com](https://sigma-3-0-project.onrender.com) by copying and pasting the link into a browser like Chrome or Microsoft Edge (it may not open directly from GitHub).
 
 ---
 
@@ -145,7 +152,8 @@ wanderlust/
 ## 🛠️ Key Technologies
 
 - **Node.js & Express**: Backend framework for routing and logic.
-- **MongoDB & Mongoose**: Database for storing users, listings, and reviews.
+- **MongoDB & MongoDB Atlas**: Cloud database for storing users, listings, and reviews.
+- **Render**: Platform for deploying and hosting the application.
 - **EJS & ejs-mate**: Templating engine for dynamic HTML.
 - **Passport**: Authentication with local strategy.
 - **Cloudinary**: Image storage for listings.
@@ -187,9 +195,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - [Node.js](https://nodejs.org/) for the runtime environment.
 - [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) for cloud database hosting.
+- [Render](https://render.com/) for deployment and hosting.
 - [Cloudinary](https://cloudinary.com/) for image management.
 - [MapTiler](https://www.maptiler.com/) for map APIs.
 - [Bootstrap](https://getbootstrap.com/) for responsive design.
 - [Font Awesome](https://fontawesome.com/) for icons.
 
-🌟 **Explore WanderLust’s features at [WanderLust](https://sigma-3-0-project.onrender.com) (but remember, it’s a demo with potential random content)!** 🌟
+🌟 **Explore WanderLust’s features by copying [https://sigma-3-0-project.onrender.com](https://sigma-3-0-project.onrender.com) into Chrome or Edge (it’s a demo with potential random content)!** 🌟
