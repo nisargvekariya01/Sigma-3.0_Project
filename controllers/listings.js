@@ -27,23 +27,23 @@ module.exports.createListing = async (req, res, next) => {
     newListing.owner = req.user._id;
     newListing.image = { url, filename };
 
-    try {
-        const response = await fetch(
-            `https://nominatim.openstreetmap.org/search?q=${newListing.location}&format=json&limit=1`
-        );
-        const data = await response.json();
-        if(data.length > 0) {
-            const { lon, lat } = data[0];
-            newListing.geometry = {
-                type: 'Point',
-                coordinates: [parseFloat(lon), parseFloat(lat)]
-            };
-        } else {
-            return console.log('Address not found');
-        }
-    } catch (error) {
-        return console.log('Geocoding error:', error);
-    }
+    // try {
+    //     const response = await fetch(
+    //         `https://nominatim.openstreetmap.org/search?q=${newListing.location}&format=json&limit=1`
+    //     );
+    //     const data = await response.json();
+    //     if(data.length > 0) {
+    //         const { lon, lat } = data[0];
+    //         newListing.geometry = {
+    //             type: 'Point',
+    //             coordinates: [parseFloat(lon), parseFloat(lat)]
+    //         };
+    //     } else {
+    //         return console.log('Address not found');
+    //     }
+    // } catch (error) {
+    //     return console.log('Geocoding error:', error);
+    // }
 
     await newListing.save();
     req.flash("success", "New Listing Created!");
