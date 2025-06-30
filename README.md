@@ -4,9 +4,9 @@
 *Explore unique stays, share your home, and leave reviews with WanderLust!*
 
 ⚠️ **Disclaimer**: WanderLust is a 🚀 demo project built for learning — not a real travel site!<br>
-🧪 Listings, images, and reviews may be random or silly (yes, even “cxcxcccvvdfdf”) — they’re just for testing!<br>
-🔍 Don’t rely on anything here — always double-check in the real world!<br>
-**Visit the project at [WanderLust](https://sigma-3-0-project.onrender.com/listings).** ⚠️
+    🧪 Listings, images, and reviews may be random or silly (yes, even “cxcxcccvvdfdf”) — they’re just for testing!<br>
+    🔍 Don’t rely on anything here — always double-check in the real world!<br>
+    **Visit the project at [WanderLust](https://sigma-3-0-project.onrender.com/listings).** ⚠️
 
 ---
 
