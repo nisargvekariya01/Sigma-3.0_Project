@@ -3,9 +3,10 @@
 ![WanderLust Banner](https://via.placeholder.com/1200x300.png?text=WanderLust+Adventure)  
 *Explore unique stays, share your home, and leave reviews with WanderLust!*
 
-⚠️ **Disclaimer**: WanderLust is a 🚀 demo project built for learning — not a real travel site!
-🧪 Listings, images, and reviews may be random or silly (yes, even “cxcxcccvvdfdf”) — they’re just for testing!
-🔍 Don’t rely on anything here — always double-check in the real world! **Visit the project at [WanderLust](https://sigma-3-0-project.onrender.com/listings).** ⚠️
+⚠️ **Disclaimer**: WanderLust is a 🚀 demo project built for learning — not a real travel site!<br>
+🧪 Listings, images, and reviews may be random or silly (yes, even “cxcxcccvvdfdf”) — they’re just for testing!<br>
+🔍 Don’t rely on anything here — always double-check in the real world!<br>
+**Visit the project at [WanderLust](https://sigma-3-0-project.onrender.com/listings).** ⚠️
 
 ---
 
