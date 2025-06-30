@@ -29,7 +29,13 @@ module.exports.createListing = async (req, res, next) => {
 
     try {
         const response = await fetch(
-            `https://nominatim.openstreetmap.org/search?q=${newListing.location}&format=json&limit=1`
+            `https://nominatim.openstreetmap.org/search?q=${newListing.location}&format=json&limit=1`,
+            {
+                headers: {
+                    "User-Agent": `Sigma3.0/1.0 (${process.env.Email_Id})`,
+                    "Accept-Language": "en"
+                }
+            }
         );
         const data = await response.json();
         if(data.length > 0) {
