@@ -68,7 +68,7 @@ WanderLust is a full-stack web application inspired by Airbnb, built to showcase
    - Push the repository to GitHub.
    - Create a new web service on Render, linking to your GitHub repo.
    - Set the environment variables in Render’s dashboard (same as `.env`).
-   - Deploy and access the app at https://<Project Name>.onrender.com.
+   - Deploy and access the app at https://<Project_Name>.onrender.com.
 
 ---
 
