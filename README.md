@@ -77,39 +77,41 @@ WanderLust is a full-stack web application inspired by Airbnb, built to showcase
 ```plaintext
 wanderlust/
 ├── controllers/       # Route handlers
-│   ├── listings.js    # Listing CRUD logic
-│   ├── reviews.js     # Review CRUD logic
-│   ├── users.js       # User authentication logic
+│   ├── listings.js
+│   ├── reviews.js
+│   ├── users.js
 ├── models/            # MongoDB schemas
-│   ├── listing.js     # Listing schema with GeoJSON
-│   ├── review.js      # Review schema
-│   ├── user.js        # User schema with Passport
+│   ├── listing.js
+│   ├── review.js
+│   ├── user.js
 ├── public/            # Static assets
 │   ├── css/           # CSS files
-│   │   ├── style.css  # Global styles
-│   │   ├── rating.css # Star rating styles
+│   │   ├── style.css
+│   │   ├── rating.css
 │   ├── js/            # JavaScript files
-│   │   ├── script.js  # Form validation
+│   │   ├── script.js
 ├── routes/            # Express routers
-│   ├── listing.js     # Listing routes
-│   ├── review.js      # Review routes
-│   ├── user.js        # User routes
+│   ├── listing.js
+│   ├── review.js
+│   ├── user.js
 ├── utils/             # Utilities
 │   ├── ExpressError.js # Custom error class
 │   ├── wrapAsync.js   # Async error handling
 ├── views/             # EJS templates
 │   ├── layouts/       # Layout templates
-│   │   ├── boilerplate.ejs # Base layout
-│   ├── partials/      # Reusable components
-│   │   ├── navbar.ejs # Navigation bar
-│   │   ├── footer.ejs # Footer
-│   │   ├── flash.ejs  # Flash messages
-│   ├── edit.ejs       # Edit listing form
-│   ├── index.ejs      # List all listings
-│   ├── new.ejs        # Create listing form
-│   ├── show.ejs       # Show listing details
-│   ├── login.ejs      # Login form
-│   ├── signup.ejs     # Signup form
+│   │   ├── boilerplate.ejs
+│   ├── includes/      # Reusable components
+│   │   ├── navbar.ejs
+│   │   ├── footer.ejs
+│   │   ├── flash.ejs
+│   ├── listings/      # Main ejs Codes
+│   │   ├── edit.ejs
+│   │   ├── index.ejs
+│   │   ├── new.ejs
+|   |   ├── show.ejs
+│   ├── users/      # Login/Signup
+│   │   ├── login.ejs
+│   │   ├── signup.ej
 │   ├── error.ejs      # Error page
 ├── app.js             # Main Express app
 ├── cloudConfig.js     # Cloudinary configuration
@@ -182,12 +184,6 @@ wanderlust/
 3. Commit changes (`git commit -m 'Add YourFeature'`).
 4. Push to the branch (`git push origin feature/YourFeature`).
 5. Open a pull request.
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
