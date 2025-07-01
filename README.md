@@ -173,11 +173,11 @@ wanderlust/
 <img src="https://github.com/nisargvekariya01/Sigma-3.0_Project/blob/0528a13714fa789622fcd9ef547a1a1fdfa3142c/Home.png" alt="Home Page" height="50%" width="50%"/><br />
 *Browse listings with tax toggle.*
 
-<video controls width="600">
-  <source src="https://res.cloudinary.com/dbqt0arhc/video/upload/v1751389341/Screen_Recording_2025-07-01_223125_lzhq8e.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-*View listing details, reviews, and a map.*
+##
+
+https://github.com/user-attachments/assets/e64de8de-250d-46ca-b4f5-4e7775d2bd5c
+
+<br>*View listing details, reviews, and a map.*
 
 ---
 
