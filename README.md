@@ -171,11 +171,13 @@ wanderlust/
 
 ## 📸 Screenshots
 
-*(Replace with actual screenshots)*  
-![Home Page](https://res.cloudinary.com/dbqt0arhc/image/upload/v1751388897/Screenshot_2025-07-01_222423_f7uuld.png)
-*Browse listings with filters and tax toggle.*
+<img src="" alt="Home Page" height="50%" width="50%"/><br />
+*Browse listings with tax toggle.*
 
-![Listing Show Page](https://via.placeholder.com/600x300.png?text=Listing+Show+Page)  
+<video controls width="600">
+  <source src="https://res.cloudinary.com/dbqt0arhc/video/upload/v1751389341/Screen_Recording_2025-07-01_223125_lzhq8e.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 *View listing details, reviews, and a map.*
 
 ---
