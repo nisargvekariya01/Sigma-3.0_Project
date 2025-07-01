@@ -172,7 +172,7 @@ wanderlust/
 ## 📸 Screenshots
 
 *(Replace with actual screenshots)*  
-![Home Page](https://via.placeholder.com/600x300.png?text=Home+Page)  
+![Home Page](https://res.cloudinary.com/dbqt0arhc/image/upload/v1751388897/Screenshot_2025-07-01_222423_f7uuld.png)
 *Browse listings with filters and tax toggle.*
 
 ![Listing Show Page](https://via.placeholder.com/600x300.png?text=Listing+Show+Page)  
