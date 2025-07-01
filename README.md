@@ -1,6 +1,5 @@
 # 🏕️ WanderLust: Your Adventure Awaits! 🌍
-
-![WanderLust Banner](https://via.placeholder.com/1200x300.png?text=WanderLust+Adventure)  
+ 
 *Explore unique stays, share your home, and leave reviews with WanderLust!*
 
 ⚠️ **Disclaimer**: WanderLust is a 🚀 demo project built for learning — not a real travel site!<br>
@@ -171,7 +170,7 @@ wanderlust/
 
 ## 📸 Screenshots
 
-<img src="" alt="Home Page" height="50%" width="50%"/><br />
+<img src="https://github.com/nisargvekariya01/Sigma-3.0_Project/blob/0528a13714fa789622fcd9ef547a1a1fdfa3142c/Home.png" alt="Home Page" height="50%" width="50%"/><br />
 *Browse listings with tax toggle.*
 
 <video controls width="600">
